@@ -40,7 +40,7 @@ function App() {
     
     const value = event.target.innerText
     const res = await fetch(diffs[value])
-    // eslint-disable-next-line
+   
       const data = await res.json()
       
       
@@ -133,7 +133,7 @@ function handleToggleButton(questidx) {
       {<div className='questcont'> {qsts} </div>}
         {<div className={resultClass}> You got {counter} / 5 correct! </div>}
         <div className='endbtns'>
-          {<CheckButton toggleCheck={toggleCheck} handleCheck={handleCheck} className="checkbtn" />}
+          {<CheckButton checkstate={check} toggleCheck={toggleCheck} handleCheck={handleCheck} className="checkbtn" />}
           {<button onClick={() => handleReset() }>Reset Game</button>}
         </div>
      </div>}

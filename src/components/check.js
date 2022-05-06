@@ -13,9 +13,22 @@ export default function CheckButton (props) {
          setActive(props.toggleCheck.every(elem => elem === true)) 
         } else {
             ref.current = true
-        } 
+        }
+        
+        
        
 }, [props.toggleCheck])
+
+    useEffect( () => {
+        if (ref.current) {
+            if (props.checkstate && active) {
+                setActive(false)
+            }
+        } else {
+            ref.current = true
+        }
+    }, [props.checkstate])
+
 
     console.log(active)
     console.log(props.toggleCheck)
