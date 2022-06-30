@@ -20,7 +20,7 @@ function App() {
   const [qsts, setQsts] = useState([])
   const [check, setCheck] = useState(false)
   const [counter, setCounter] = useState(0)
-  const [toggleCheck, setToggleCheck] = useState([false, false, false, false, false])
+  const [toggleCheck, setToggleCheck] = useState(Array(5).fill(false)
   const [resultClass, setResultClass] = useState('resultsoff')
  
 
@@ -112,7 +112,7 @@ function App() {
 }
 
   function initToggleState() {
-    setToggleCheck([false, false, false, false, false])
+    setToggleCheck(Array(5).fill(false)
   }
 
 
