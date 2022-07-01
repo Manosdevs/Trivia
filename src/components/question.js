@@ -34,7 +34,7 @@ export default function Question(props) {
            
             if (anstorend[selectBtn].props.children === props.cor) {
                 props.incCount()
-                console.log('pogchamp')
+               
                 
                 
             }
