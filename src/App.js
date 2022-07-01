@@ -118,7 +118,6 @@ function App() {
 
 function handleToggleButton(questidx) {
     setToggleCheck(elem => elem.map((e, index) => {
-      console.log(toggleCheck)
       return   index === questidx
           ? true
           : e
